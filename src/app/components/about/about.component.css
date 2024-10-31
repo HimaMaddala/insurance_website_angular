@@ -1,0 +1,6 @@
+/* about.component.css */
+
+:host {
+    @apply flex flex-col lg:flex-row gap-8 items-center;
+  }
+  

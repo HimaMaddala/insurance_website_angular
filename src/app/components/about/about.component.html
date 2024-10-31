@@ -1,0 +1,27 @@
+<section class="bg-[#f8f8f8] py-10">
+  <div class="flex flex-col items-center md:flex-row gap-8 mx-4 md:mx-20">
+    <div class="flex flex-col gap-6 w-full md:w-1/2 text-center md:text-left">
+      <h2 class="text-teal-600 text-md font-semibold">ABOUT INCEP</h2>
+      <h3 class="text-5xl font-bold text-gray-800 mb-5">Life Insurance That Creates Wealth For Everyone</h3>
+    
+      <div *ngFor="let feature of features" class="flex flex-col md:flex-row items-center gap-4 p-8 bg-white shadow-md rounded-sm">
+        <div class="flex items-center justify-center">
+          <img [src]="feature.icon" alt="Icon" class="w-20 h-20 object-contain">
+        </div>
+        <div class="text-center md:text-left">
+          <h4 class="text-2xl font-bold text-gray-800">{{ feature.title }}</h4>
+          <p class="text-gray-600">{{ feature.description }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-4 w-full md:w-1/2">
+      <div class="flex flex-col gap-4">
+        <img src="assets/about_assets/img1.jpg" class="rounded-sm object-cover" alt="Image 1" />
+        <img src="assets/about_assets/img3.jpg" class="rounded-sm object-cover" alt="Image 2" />
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="assets/about_assets/img2.jpg" class="rounded-sm object-cover" alt="Image 3" />
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,7 @@
+<section class="py-15 mt-10 mx-10">
+  <h2 class="text-center text-lg font-semibold text-green-700">OUR FEATURES</h2>
+  <h3 class="text-center text-5xl mx-auto max-w-3xl font-bold text-gray-800 my-4">Better Digital Insurance Begins Right Here</h3>
+  <div class="text-lg text-gray-600 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 mt-16 mb-20">
+    <app-feature *ngFor="let service of services" [data]="service"></app-feature>
+  </div>
+</section>
